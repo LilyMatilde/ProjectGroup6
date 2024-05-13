@@ -33,6 +33,7 @@ body {
   margin: auto;
   padding: 0 30px;
   max-width: 700px;
+  font-size: 20px;
 }
 
 .navBar-logo {
@@ -72,7 +73,7 @@ body {
   background-color: #04aa6d;
 }
 
-/* Mobile version of nav*/
+/* -------------------------------Mobile version of nav---------------------------*/
 .nav-button {
   background-color: transparent;
   border: 10px;
@@ -85,7 +86,7 @@ body {
   display: none;
 }
 
-/*Search bar Css*/
+/*--------------------------------Search bar Css---------------------------------*/
 
 .search-container {
   padding: 0px 0px 20px 80px;
@@ -241,9 +242,14 @@ header .header-title {
   font-size: 6rem;
 }
 
-/*----------------------------------------*/
+/*-----------------------------About page CSS-------------------------------------------------*/
 
-/*CSS Main sections */
+.about-img {
+  width: 200px;
+  border-radius: 50%;
+}
+
+/*----------------------------CSS Main sections -------------------------------------*/
 main {
   margin: 0 auto;
   max-width: 900px;
@@ -297,6 +303,13 @@ main {
   object-fit: cover;
   height: 100%;
   width: 100%;
+  opacity: 1;
+  cursor: pointer;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.img-tile:hover {
+  opacity: 0.5;
 }
 
 .tile-text {
@@ -315,6 +328,8 @@ main {
   font-family: "Montserrat", sans-serif;
 }
 
+/*--------------------------------------parks in africa images---------------------*/
+
 /* ------------------------------------CAROUSEL------------------------------------------- */
 #carouselExample {
   margin-top: 3%;
@@ -327,16 +342,6 @@ main {
 .w-100 {
   height: 75vh;
   object-fit: cover;
-}
-/*------------------------------------------------FOOTER SECTION------------------------*/
-.icons i {
-  font-size: 50px;
-  color: rgb(58, 116, 65);
-}
-
-.footer :hover {
-  color: rgb(58, 116, 65);
-  transform: scale(1.2);
 }
 
 /* --------------------------------FORM PAGE section of the CSS----------------------------------------------*/
@@ -364,4 +369,93 @@ main {
 label {
   font-weight: bold;
   font-size: 15px;
+}
+
+/*------------------------------------------------FOOTER SECTION------------------------*/
+.icons i {
+  font-size: 50px;
+  color: rgb(58, 116, 65);
+}
+
+.footer :hover {
+  color: rgb(58, 116, 65);
+  transform: scale(1.2);
+}
+
+/*---------------MODAL-----------------*/
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation */
+.modal-content,
+#caption {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(0.1);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px) {
+  .modal-content {
+    width: 100%;
+  }
 }

@@ -6,32 +6,79 @@ const nav = document.getElementById("myLinks");
 button.addEventListener("click", () => {
   nav.classList.toggle("show");
 });
-//Parks page images alert pop up box when on click with information what we think of each park
-
-// const serengeti = document.getElementById("serengeti");
-
-// function stats() {
-//   if (serengeti) {
-//     alert("Hello");
-//   } else {
-//     alert("oh no");
-//   }
-// }
-// console.log(stats(serengeti));
 
 // Get the modal
 const modal = document.getElementById("myModal");
 
 // Get the image and insert it inside the modal - use its "alt" text as a caption
 const serengeti = document.getElementById("serengeti");
+const kruger = document.getElementById('kruger');
+const hwange = document.getElementById('hwange');
+const bwindi = document.getElementById('bwindi');
+
+
 var modalImg = document.getElementById("img01");
 var captionText = document.getElementById("caption");
-serengeti.onclick = function () {
+
+
+function imgBig(event) {
   modal.style.display = "block";
-  modalImg.src = this.src;
-  captionText.innerHTML = this.id;
+  modalImg.src = event.target.src;
+  captionText.innerHTML = event.target.alt;
   console.log("test");
 };
+
+
+
+
+//Parks in Africa functions
+serengeti.onclick = imgBig;
+kruger.onclick = imgBig;
+hwange.onclick = imgBig;
+bwindi.onclick = imgBig;
+
+
+
+//Parks in Asia functions
+const khao = document.getElementById("khao");
+const huangshan = document.getElementById('huangshan');
+const fuji = document.getElementById('fuji');
+const nikko = document.getElementById('nikko');
+
+
+khao.onclick = imgBig;
+huangshan.onclick = imgBig;
+fuji.onclick = imgBig;
+nikko.onclick = imgBig;
+
+
+//Parks in America functions
+const banff = document.getElementById("banff");
+const galapagos = document.getElementById('galapagos');
+const torresDelPaine = document.getElementById('torresDelPaine');
+const yellowstone = document.getElementById('yellowstone');
+
+
+
+banff.onclick = imgBig;
+galapagos.onclick = imgBig;
+torresDelPaine.onclick = imgBig;
+yellowstone.onclick = imgBig;
+
+
+//Parks in Europe functions
+const plitvice = document.getElementById("plitvice");
+const teide = document.getElementById('teide');
+const skjoldungernes = document.getElementById('skjoldungernes');
+const vatnajokull = document.getElementById('vatnajokull');
+
+
+plitvice.onclick = imgBig;
+teide.onclick = imgBig;
+skjoldungernes.onclick = imgBig;
+vatnajokull.onclick = imgBig;
+
+
 
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
@@ -40,3 +87,5 @@ var span = document.getElementsByClassName("close")[0];
 span.onclick = function () {
   modal.style.display = "none";
 };
+
+

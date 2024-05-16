@@ -202,7 +202,7 @@ body {
 /*CSS Header sections */
 
 header .header-parks {
-  background-image: url("/Imgs/headers/wallpaperflare.com_wallpaper.jpg");
+  background-image: url("./Imgs/headers/wallpaperflare.com_wallpaper.jpg");
   background-color: #cccccc;
   height: 500px;
   background-position: center;
@@ -213,7 +213,7 @@ header .header-parks {
 }
 
 header .header-aboutUs {
-  background-image: url("/Imgs/headers/serengeti-national-park-1.jpg");
+  background-image: url("./Imgs/headers/serengeti-national-park-1.jpg");
   background-color: #cccccc;
   height: 500px;
   background-position: center;
@@ -224,7 +224,7 @@ header .header-aboutUs {
 }
 
 header .header-contactUs {
-  background-image: url("/Imgs/headers/wallpaperflare.com_wallpaper\ \(1\).jpg");
+  background-image: url("./Imgs/headers/wallpaperflare.com_wallpaper\ \(1\).jpg");
   background-color: #cccccc;
   height: 500px;
   background-position: center;

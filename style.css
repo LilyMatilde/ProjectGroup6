@@ -260,6 +260,13 @@ header .header-title {
   float: right;
   margin: 2%;
 }
+
+.person-title {
+  font-size: 36px;
+  line-height: 1.5;
+  font-weight: 700;
+}
+
 /*----------------------------CSS Main sections -------------------------------------*/
 main {
   margin: 0 auto;

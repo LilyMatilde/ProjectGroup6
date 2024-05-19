@@ -414,26 +414,46 @@ label {
   }
 }
 
-footer {
-  max-width: 500px;
+.container {
+  max-width: 1200px;
   margin: 0 auto;
 }
-.footer-container {
-  display: inline;
+
+.footer {
+  display: flex;
+  width: 100%;
+  height: 100px;
+  justify-content: space-between;
+  gap: 122px;
 }
+
+.footer.column {
+  display: flex;
+  text-align: center;
+}
+
+.footer-headings {
+  margin-bottom: 1rem;
+  padding: 5px;
+}
+
+.footer-links {
+  display: block;
+  width: max-content;
+  padding: 5px 10px;
+  font-weight: 700;
+  font-size: 40px;
+  text-decoration: none;
+  color: #212121;
+}
+
 .footerLogo {
   justify-content: left;
   margin-top: 8%;
   margin-left: 5%;
 }
 
-.footer {
-  justify-content: center;
-}
-
 .icons i {
-  display: flex;
-  justify-content: baseline;
   float: right;
   font-size: 50px;
   color: rgb(58, 116, 65);
@@ -442,7 +462,7 @@ footer {
 
 .footer :hover {
   color: rgb(58, 116, 65);
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 
 /*---------------MODAL-----------------*/
